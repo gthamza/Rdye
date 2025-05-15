@@ -125,8 +125,14 @@ const Payment = ({
   return (
     <>
       <CustomButton
+        title="Chat"
+        className="rounded-full bg-green-600 mt-2"
+        onPress={() => router.push("/chat")}
+      />
+
+      <CustomButton
         title="Confirm Ride"
-        className="my-10"
+        className="mt-4 mb-10"
         onPress={openPaymentSheet}
       />
 
